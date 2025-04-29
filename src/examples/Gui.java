@@ -1,3 +1,4 @@
+package examples;
 import desmoj.extensions.experimentation.ui.ExperimentStarterApplication;
 import desmoj.extensions.experimentation.util.ExperimentRunner;
 

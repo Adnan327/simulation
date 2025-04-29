@@ -1,3 +1,4 @@
+package examples;
 import desmoj.core.simulator.*;
 
 public class CustomerArrivalEvent extends Event<Customer> {

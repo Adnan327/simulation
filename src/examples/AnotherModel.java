@@ -1,10 +1,12 @@
+package examples;
+
 import desmoj.core.simulator.*;
 
 public class AnotherModel extends Model {
 
      // WICHTIG: Öffentlicher parameterloser Konstruktor
     public AnotherModel() {
-        super(null, "SimpleModel", true, true);
+        super(null, "AnotherModel", true, true);
     }
 
     public AnotherModel(Model owner, String name, boolean showInReport, boolean showInTrace) {
@@ -23,8 +25,5 @@ public class AnotherModel extends Model {
 
     @Override
     public void init() {
-        traceOn();
-        getExperiment().stop(new TimeInstant(100.0));
-        // Noch keine Ressourcen oder Queues angelegt
     }
 }

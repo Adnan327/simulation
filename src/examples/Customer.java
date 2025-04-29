@@ -1,3 +1,4 @@
+package examples;
 import desmoj.core.simulator.Entity;
 import desmoj.core.simulator.*;
 

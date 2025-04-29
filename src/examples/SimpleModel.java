@@ -1,3 +1,4 @@
+package examples;
 import desmoj.core.simulator.*;
 
 public class SimpleModel extends Model {
