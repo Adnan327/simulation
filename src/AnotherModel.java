@@ -23,6 +23,8 @@ public class AnotherModel extends Model {
 
     @Override
     public void init() {
+        traceOn();
+        getExperiment().stop(new TimeInstant(100.0));
         // Noch keine Ressourcen oder Queues angelegt
     }
 }

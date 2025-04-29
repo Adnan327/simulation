@@ -5,7 +5,7 @@ public class Gui {
     public static void main(String[] args) {
         
          // Neues Fenster (GUI-Anwendung von DESMO-J)
-        ExperimentStarterApplication gui = new ExperimentStarterApplication(SimpleModel.class, desmoj.extensions.experimentation.util.ExperimentRunner.class);
+        ExperimentStarterApplication gui = new ExperimentStarterApplication(SimpleModel.class, ExperimentRunner.class);
 
         // Titel setzen
         gui.setTitle("Leeres DESMO-J Fenster");

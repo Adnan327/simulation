@@ -18,13 +18,12 @@ public class SimpleModel extends Model {
 
     @Override
     public void doInitialSchedules() {
-        Customer firstCustomer = new Customer(this, "Erster Kunde", true);
-        CustomerArrivalEvent firstArrival = new CustomerArrivalEvent(this, "Erste Ankunft", true);
-        firstArrival.schedule(firstCustomer, new TimeSpan(0.0));
     }
 
     @Override
     public void init() {
-
+        Customer firstCustomer = new Customer(this, "Kunde_1", true);
+        CustomerArrivalEvent firstArrival = new CustomerArrivalEvent(this, "Erste Ankunft", true);
+        firstArrival.schedule(firstCustomer, new TimeSpan(0.0));
     }
 }

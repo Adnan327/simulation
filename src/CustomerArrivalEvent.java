@@ -8,10 +8,14 @@ public class CustomerArrivalEvent extends Event<Customer> {
 
     @Override
     public void eventRoutine(Customer customer) {
-        sendTraceNote("Ein Kunde ist angekommen!");
+        sendTraceNote("Kunde " + customer.getName() + " ist angekommen!");
 
-        Customer newCustomer = new Customer(getModel(), "Neuer Kunde", true);
-        CustomerArrivalEvent nextArrival = new CustomerArrivalEvent(getModel(), "Next Arrival", true);
-        nextArrival.schedule(newCustomer, new TimeSpan(5.0));
+        // neuen Kunden erzeugen
+        int nextId = Integer.parseInt(customer.getName().split("_")[1].split("#")[0]) + 1;
+        Customer nextCustomer = new Customer(getModel(), "Kunde_" + nextId, true);
+
+        // neues Event erzeugen und planen
+        CustomerArrivalEvent nextArrival = new CustomerArrivalEvent(getModel(), "Ankunft_" + nextId, true);
+        nextArrival.schedule(nextCustomer, new TimeSpan(5.0));
     }
 }
