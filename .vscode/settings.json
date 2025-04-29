@@ -1,4 +1,7 @@
 {
+    "args": [],
+    "vmArgs": "-cp bin;lib/desmoj-2.5.1e-bin.jar",
+    "className": "Gui.Gui",
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
